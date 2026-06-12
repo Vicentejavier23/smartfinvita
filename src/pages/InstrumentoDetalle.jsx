@@ -5,6 +5,7 @@ import Footer from '../components/layout/Footer';
 import RiskMeter from '../components/ui/RiskMeter';
 import LucideIcon from '../components/ui/LucideIcon';
 import Button from '../components/ui/Button';
+import Simulador from '../components/ui/Simulador';
 import { INSTRUMENTOS } from '../data/instrumentos';
 
 export default function InstrumentoDetalle() {
@@ -123,6 +124,9 @@ export default function InstrumentoDetalle() {
             </div>
           </div>
         )}
+
+        {/* Simulador */}
+        <Simulador tasaMin={instrumento.tasaSimMin} tasaMax={instrumento.tasaSimMax} />
 
         {/* Disclaimer legal */}
         <div className="bg-amber-50 border border-amber-200 rounded-xl p-4 mb-6">

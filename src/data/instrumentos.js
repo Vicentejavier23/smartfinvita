@@ -22,6 +22,8 @@ export const INSTRUMENTOS = [
     regulacion: 'Regulado por la CMF. Depósitos cubiertos por FGD hasta UF 250.',
     perfiles: ['conservador', 'moderado'],
     score: 10,
+    tasaSimMin: 0.04,
+    tasaSimMax: 0.06,
   },
   {
     id: 'apv',
@@ -46,6 +48,8 @@ export const INSTRUMENTOS = [
     regulacion: 'Regulado por la CMF y la Superintendencia de Pensiones.',
     perfiles: ['conservador', 'moderado'],
     score: 12,
+    tasaSimMin: 0.05,
+    tasaSimMax: 0.08,
   },
   {
     id: 'cuenta-dos-afp',
@@ -70,6 +74,8 @@ export const INSTRUMENTOS = [
     regulacion: 'Regulado por la Superintendencia de Pensiones.',
     perfiles: ['conservador', 'moderado'],
     score: 11,
+    tasaSimMin: 0.04,
+    tasaSimMax: 0.09,
   },
   {
     id: 'fondos-mutuos',
@@ -94,6 +100,8 @@ export const INSTRUMENTOS = [
     regulacion: 'Regulado por la CMF. Las SAFM deben inscribirse en el Registro de Gestoras.',
     perfiles: ['moderado', 'agresivo'],
     score: 20,
+    tasaSimMin: 0.06,
+    tasaSimMax: 0.12,
   },
   {
     id: 'etf',
@@ -118,6 +126,8 @@ export const INSTRUMENTOS = [
     regulacion: 'Regulado por la CMF. ETFs internacionales sujetos a regulación extranjera.',
     perfiles: ['moderado', 'agresivo'],
     score: 22,
+    tasaSimMin: 0.07,
+    tasaSimMax: 0.15,
   },
   {
     id: 'bienes-raices',
@@ -142,6 +152,8 @@ export const INSTRUMENTOS = [
     regulacion: 'Sin regulación específica de la CMF. Sujeto al Conservador de Bienes Raíces y SII.',
     perfiles: ['moderado', 'agresivo'],
     score: 18,
+    tasaSimMin: 0.04,
+    tasaSimMax: 0.08,
   },
   {
     id: 'fintech',
@@ -166,6 +178,8 @@ export const INSTRUMENTOS = [
     regulacion: 'Ley Fintech (Ley 21.521) vigente desde 2023, regulada por la CMF.',
     perfiles: ['moderado', 'agresivo'],
     score: 16,
+    tasaSimMin: 0.06,
+    tasaSimMax: 0.15,
   },
   {
     id: 'acciones',
@@ -190,6 +204,8 @@ export const INSTRUMENTOS = [
     regulacion: 'Regulado por la CMF y la Bolsa de Santiago.',
     perfiles: ['agresivo'],
     score: 28,
+    tasaSimMin: 0.08,
+    tasaSimMax: 0.20,
   },
   {
     id: 'criptomonedas',
@@ -214,5 +230,7 @@ export const INSTRUMENTOS = [
     regulacion: 'Sin regulación de la CMF. ADVERTENCIA: No existen mecanismos de protección al inversionista.',
     perfiles: ['agresivo'],
     score: 30,
+    tasaSimMin: 0.10,
+    tasaSimMax: 0.80,
   },
 ];
