@@ -85,7 +85,7 @@ export default function Perfil() {
             </div>
             <input
               type="range"
-              min={400000}
+              min={250000}
               max={5000000}
               step={50000}
               value={ingresos}
@@ -94,7 +94,7 @@ export default function Perfil() {
               aria-label="Slider de ingresos"
             />
             <div className="flex justify-between text-xs text-gray-400 mt-1">
-              <span>{formatCLP(400000)}</span>
+              <span>{formatCLP(250000)}</span>
               <span>{formatCLP(5000000)}</span>
             </div>
           </div>
